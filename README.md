@@ -64,7 +64,18 @@ dfx deploy
 npm start
 ```
 
-14. Now follow the steps in README of token repo to transfer half a billion tokens to the canister from where we can collect the DAMN tokens
+13. Run in token folder
+```
+dfx canister id token
+```
 
-15. We can visit https://localhost:8080 and https://localhost:8081 to visit both our websites.
+14. Set the token canister id into the <REPLACE WITH TOKEN CANISTER ID> in handlebuy
+
+```
+const dangPrincipal = Principal.fromText("<REPLACE WITH TOKEN CANISTER ID>");
+```
+
+15. Now follow the steps in README of token repo to transfer half a billion tokens to the canister from where we can collect the DAMN tokens
+
+16. We can visit https://localhost:8080 and https://localhost:8081 to visit both our websites.
     
